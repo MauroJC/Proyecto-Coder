@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #102436;
+    --secondary: #02327e;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.mainlogo {
+    text-align: center;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(500deg, var(--primary), var(--secondary));
+}
+
+
+p {
+    /*Parrafo en General*/
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    /*Titulo*/
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h1 a {
+    /*Titulo*/
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+h2 {
+    /*Titulo Secundario*/
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*BARRA DE NAVEGACION*/
+nav ul {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-family: "Belanosima", sans-serif;
+    display: inline;
+    font-weight: 400;
+}
+
+
+nav ul li a {
+    color: #152a3d;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border: solid #152a3d 4px;
+    background-color: #152a3d;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+/*FIN BARRA DE NAVEGACION*/
+
+main::after {
+    content: '';
+    height: 30px;
+}
+
+.titulo-secundario {
+    font-family: "Belanosima", sans-serif;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.seccion-sobrenosotros {
+    text-align: center;
+}
+
+/*Inicio Acordion Sobre Nosotros*/
+.accordion {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.accordion-button {
+    justify-content: center !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 2.5rem !important;
+    position: relative;
+    text-transform: uppercase !important;
+    font-weight: bold;
+}
+
+
+.accordion-button::after {
+    position: absolute;
+    right: 1rem; /* posición de la flechita */
+
+}
+
+/*Fin Acordion Sobre Nosotros*/
+.imagen1 {
+    /*Imagen Central VER*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/*Seccion Index Nuestro Trabajo*/
+
+.trabajo1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trabajo1 p {
+    border: 0px solid black;
+    align-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 50%
+}
+
+.img-nuestrotrabajo1 {
+    border: 1px solid black;
+    height: 400px;
+    width: 48%;
+    margin-left: 20px;
+}
+
+.trabajo2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trabajo2 p {
+    border: 0px solid black;
+    align-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 50%
+}
+
+.img-nuestrotrabajo2 {
+    border: 1px solid black;
+    height: 400px;
+    width: 48%;
+    margin-right: 20px;
+}
+
+/*GRID DE CONTACTO*/
+.grid-contacto {
+    /*Formulario de Contacto*/
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px 30px 30px 50px 10px;
+    justify-items: right;
+    justify-self: self-start;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
+.item-nombre {
+    grid-area: 1/2/1/2;
+}
+
+.item-apellido {
+    grid-area: 1/3/1/3;
+}
+
+.item-empresa {
+    grid-area: 2/2/2/2;
+}
+
+.item-rubro {
+    grid-area: 2/3/2/3;
+}
+
+.item-localidad {
+    grid-area: 3/2/3/2;
+}
+
+.item-email {
+    grid-area: 3/3/3/3;
+}
+
+.item-telefono {
+    grid-area: 4/2/4/2;
+}
+
+.item-observaciones {
+    grid-area: 4/3/4/3;
+}
+
+.item-boton {
+    /*Boton de Contacto*/
+    display: flex;
+    justify-content: center;
+}
+
+/*FIN GRID DE CONTACTO*/
+
+.seccion-clientes {
+    /*Seccion de Clientes*/
+    text-align: center;
+}
+
+.item-contacto {
+    border: solid 2px white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+/*PAGINA SOBRE NOSOTROS*/
+
+.pagina-nosotros p {
+    text-align: justify;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*PAGINA NUESTRO TRABAJO*/
+
+.imagenes-trabajo p {
+    position: relative;
+    text-align: justify;
+    margin-left: 48%;
+    float: none;
+    margin-top: 120px;
+    margin-bottom: 270px;
+    margin-right: 30px;
+
+
+}
+
+.imagenes-trabajo img {
+    position: static;
+    padding-left: 5%;
+    padding-top: 2%;
+    height: 340px;
+    width: 540px;
+    float: left;
+    clear: left;
+}
+
+/*LINK A CONTACTO*/
+.bot-con {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*PAGINA CLIENTES*/
+
+.imagenes-clientes img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: table
+}
