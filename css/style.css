@@ -14,13 +14,28 @@ header {
     background-color: #ffffff;
 }
 
+
 .mainlogo {
     text-align: center;
+    margin: 0 auto;
 }
 
+.mainlogo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     position: relative;
     background: linear-gradient(200deg, var(--primary), var(--secondary));
+    overflow-y: auto;
+    border: 1px solid red;
 }
 
 
@@ -65,30 +80,34 @@ h2 {
 .nav {
     justify-content: center;
 }
+
 .nav-pills {
     border-radius: 0.375rem;
     padding-bottom: 3px;
-        gap: 1rem;
+    gap: 1rem;
 }
 
 
-.nav-link { 
+.nav-link {
     font-family: "Belanosima", sans-serif;
     text-transform: uppercase;
     color: #102436;
-    
+
 }
+
 .nav-link:hover {
     border-radius: 0.30rem;
-    box-shadow:0 0 0 2px #102436;
+    box-shadow: 0 0 0 2px #102436;
     color: #102436;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show .nav-link {
     border-radius: 0.30rem;
-    color: #fff; /*Color del Texto Activo*/
-    background-color: #102436; /* Color Fondo Pill*/
+    color: #fff;
+    /*Color del Texto Activo*/
+    background-color: #102436;
+    /* Color Fondo Pill*/
 }
 
 /*FIN NUEVA NAV*/
@@ -125,7 +144,6 @@ FIN BARRA DE NAVEGACION ANTERIOR*/
 
 main::after {
     content: '';
-    height: 30px;
 }
 
 .titulo-secundario {
@@ -285,8 +303,11 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    min-height: 30px;
+    background-color: transparent;
+    border: 1px solid red
 }
+
 
 /*PAGINA SOBRE NOSOTROS*/
 
@@ -336,4 +357,22 @@ footer {
     width: 200px;
     margin: auto;
     display: table
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 480px) {
+
+    .trabajo1,
+    .trabajo2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trabajo1 p,
+    .trabajo2 p,
+    .img-nuestrotrabajo1,
+    .img-nuestrotrabajo2 {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
