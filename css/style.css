@@ -12,6 +12,8 @@
 
 header {
     background-color: #ffffff;
+    border-bottom: 3px solid gray;
+    border-radius: 0;
 }
 
 
@@ -177,7 +179,7 @@ main::after {
 .accordion-button::after {
     position: absolute;
     right: 1rem;
-    /* posición de la flechita */
+    /*recordatorio posición de la flechita */
 
 }
 
@@ -189,6 +191,11 @@ main::after {
     margin-right: auto;
     width: 50%;
     text-align: center;
+}
+
+#carouselExampleAutoplaying {
+    width: 97%;
+    margin: 0 auto;
 }
 
 /*Seccion Index Nuestro Trabajo*/
@@ -237,6 +244,7 @@ main::after {
 .grid-contacto {
     /*Formulario de Contacto*/
     text-transform: capitalize;
+    font-weight:500;
     color: white;
     display: grid;
     justify-items: stretch;
@@ -252,6 +260,24 @@ main::after {
     display: flex;
     flex-direction: column;
     align-self: flex-end
+}
+
+.grid-contacto div input {
+    border: 0.5px solid gray;
+    border-radius: 0.3rem;
+}
+
+.grid-contacto div input::placeholder {
+    text-indent: 5px;
+}
+
+.grid-contacto div textarea {
+    border: 0.5px solid gray;
+    border-radius: 0.3rem;
+}
+
+.grid-contacto div textarea::placeholder {
+    text-indent: 5px;
 }
 
 .item-nombre {
@@ -392,9 +418,9 @@ footer {
 }
 
 /*MEDIA QUERY*/
-@media (max-width: 480px) {
-    /*MQ INDEX*/
 
+/*MQ INDEX*/
+@media (max-width: 480px) {
     .trabajo1,
     .trabajo2 {
         display: flex;
@@ -411,9 +437,9 @@ footer {
     }
 }
 
+/*MQ CLIENTES*/
 @media(max-width: 1020px) {
     .grid-imgclientes {
-        /*MQ CLIENTES*/
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 200px);
@@ -449,9 +475,10 @@ footer {
     }
 }
 
+/*MQ CONTACTO*/
 @media (max-width: 450px) {
     .grid-contacto {
-        row-gap: 2px;
+        row-gap: 5px;
         display: flex;
         flex-direction: column;
         width: auto;
