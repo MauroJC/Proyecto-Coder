@@ -13,7 +13,7 @@
 <body>
     <header> <!--Encabezado del Documento-->
         <div class="mainlogo">
-            <img src="../img/Logo Blanco Fondo Blanco.png" alt="Logo Meret">
+            <img class="mainlogo img" src="../img/Logo Blanco Fondo Blanco.png" alt="Logo Meret">
         </div>
         <ul class="nav nav-pills">
             <li class="nav-item">
@@ -47,37 +47,38 @@
         <div class="grid-contacto">
             <div class="item-nombre">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="Nombre" required>
+                <input type="text" placeholder="Nombre" id="Nombre" required>
             </div>
-
             <div class="item-apellido">
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="Apellido" id="Apellido" required>
+                <label for="apellido"> </label>
+                <input type="text" name="Apellido" placeholder="Apellido" id="Apellido" required>
             </div>
             <div class="item-empresa">
                 <label for="empresa">Empresa:</label>
-                <input type="text" id="empresa" name="empresa" required>
+                <input type="text" id="empresa" placeholder="Nombre" name="empresa" required>
             </div>
             <div class="item-rubro">
-                <label for="rubro">Rubro:</label>
-                <input type="text" name="Rubro" id="Rubro" required>
+                <input type="text" name="Rubro" placeholder="Rubro" id="Rubro" required>
             </div>
             <div class="item-localidad">
-                <label for="localidad">Localidad:</label>
-                <input type="text" name="Localidad" id="Localidad" required>
+                <label for="localidad">Ubicacion:</label>
+                <input type="text" name="Pais" placeholder="Pais" id="Pais" required>
+            </div>
+            <div class="item-ciudad">
+                <input type="text" name="Ciudad" placeholder="Ciudad" id="Ciudad" required>
+            </div>
+            <div class="item-infocontacto">
+                <label for="contacto">Contacto</label>
+                <input type="number" name="Telefono" placeholder="Telefono" id="Telefono" required>
             </div>
             <div class="item-email">
-                <label for="email">Email:</label>
-                <input type="text" name="Email" id="Email" required>
+                <input type="text" name="Email" placeholder="Email" id="Email" required>
             </div>
-            <div class="item-telefono">
-                <label for="telefono">Teléfono:</label>
-                <input type="number" name="Telefono" id="Telefono" required>
-            </div>
-            <div class="item-observaciones">
-                <label for="observaciones">Observaciones:</label>
-                <textarea id="observaciones" name="observaciones" rows="1"></textarea>
-            </div>
+                <div class="item-observaciones">
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" placeholder="Comentanos cualquier informacion adicional" name="observaciones" rows="2"></textarea>
+                </div>
+            
         </div>
         <div class="item-boton">
             <button type="submEnviarit">Enviar</button>
