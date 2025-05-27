@@ -542,6 +542,14 @@ footer p {
         align-items: center;
     }
 }
+@media (max-width: 450px) {
+.cuadrocontacto {
+    margin: 10px auto;
+    max-width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+}
 
 /*MQ NUESTRO TRABAJO*/
 
