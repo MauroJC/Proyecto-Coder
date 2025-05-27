@@ -439,7 +439,7 @@ footer {
 
 /*MQ NUESTRO TRABAJO*/
 
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
     .imagenes-trabajo {
         display: flex;
         flex-direction: column;
@@ -457,13 +457,6 @@ footer {
         max-width: 100%;
         height: auto;
         padding: 0;
-
-
-    }
-
-    .imagenes-trabajo p {
-        margin: 0 auto;
-        text-align: center;
     }
 }
 
