@@ -428,7 +428,7 @@ footer {
 /*MEDIA QUERY*/
 
 /*MQ INDEX*/
-@media (max-width: 480px) {
+@media (max-width: 700px) {
 
     .trabajo1,
     .trabajo2 {
@@ -441,8 +441,18 @@ footer {
     .trabajo2 p,
     .img-nuestrotrabajo1,
     .img-nuestrotrabajo2 {
+        align-content: center;
         width: 90%;
         margin: 10px auto;
+    }
+
+    .trabajo1 p,
+    .trabajo2 p {
+        align-content: center;
+        width: 80%;
+        margin: 10px auto;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
