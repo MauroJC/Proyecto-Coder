@@ -159,6 +159,53 @@ main::after {
     text-align: center;
 }
 
+/*INDEX CLIENTES*/
+.clientesindex .carousel-img-wrapper img {
+    height: 150px;
+    width: 150px;
+    gap: 15px;
+}
+
+.clientesindex div {
+
+    max-height: 150px;
+    max-width: 320px;
+    justify-content: center !important;
+}
+
+.clientesindex .carousel-item .carousel-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientesindex .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+
+}
+
+.clientesindex .carousel-item.active {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+}
+
+.clientesindex .carousel-inner {
+    overflow: hidden;
+    position: relative;
+}
+
+.clientesindex .accordion-button {
+    display: none;
+}
+
 /*Inicio Acordion Sobre Nosotros*/
 .accordion {
     margin-left: 10px;
@@ -183,20 +230,17 @@ main::after {
 
 }
 
-/*Fin Acordion Sobre Nosotros*/
-.imagen1 {
-    /*Imagen Central VER*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
+#carouselExampleAutoplaying {
+    width: 97%;
+    margin: 0 auto;
 }
 
 #carouselExampleAutoplaying {
     width: 97%;
     margin: 0 auto;
 }
+
+/*FIN Acordion Sobre Nosotros*/
 
 /*Seccion Index Nuestro Trabajo*/
 .flex-trabajos {
@@ -333,8 +377,8 @@ main::after {
 
 /*FIN GRID DE CONTACTO*/
 
+/*PAGINA CLIENTES*/
 .seccion-clientes {
-    /*Seccion de Clientes*/
     text-align: center;
 }
 
