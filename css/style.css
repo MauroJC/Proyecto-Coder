@@ -624,3 +624,12 @@ footer p {
         display: none;
     }
 }
+
+/*MQ FOOTER*/
+
+@media (max-width: 400px) {
+    .footermedia li {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+}
