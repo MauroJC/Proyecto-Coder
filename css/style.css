@@ -244,7 +244,7 @@ main::after {
 .grid-contacto {
     /*Formulario de Contacto*/
     text-transform: capitalize;
-    font-weight:500;
+    font-weight: 500;
     color: white;
     display: grid;
     justify-items: stretch;
@@ -353,26 +353,25 @@ footer {
 
 /*PAGINA NUESTRO TRABAJO*/
 
-.imagenes-trabajo p {
-    position: relative;
-    text-align: justify;
-    margin-left: 48%;
-    float: none;
-    margin-top: 120px;
-    margin-bottom: 270px;
-    margin-right: 30px;
+.imagenes-trabajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
 
 }
 
-.imagenes-trabajo img {
-    position: static;
-    padding-left: 5%;
-    padding-top: 2%;
-    height: 340px;
-    width: 540px;
-    float: left;
-    clear: left;
+.item-trabajo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 90%;
+    gap: 20px;
+}
+
+.item-trabajo img {
+    display: block;
 }
 
 /*LINK A CONTACTO*/
@@ -421,6 +420,7 @@ footer {
 
 /*MQ INDEX*/
 @media (max-width: 480px) {
+
     .trabajo1,
     .trabajo2 {
         display: flex;
@@ -436,6 +436,37 @@ footer {
         margin: 10px auto;
     }
 }
+
+/*MQ NUESTRO TRABAJO*/
+
+@media (max-width: 750px) {
+    .imagenes-trabajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-trabajo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-trabajo img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+
+
+    }
+
+    .imagenes-trabajo p {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 
 /*MQ CLIENTES*/
 @media(max-width: 1020px) {
@@ -481,8 +512,7 @@ footer {
         row-gap: 5px;
         display: flex;
         flex-direction: column;
-        width: auto;
-        margin: 10px;
+        margin: 20px auto;
 
     }
 
