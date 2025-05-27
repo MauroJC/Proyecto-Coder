@@ -542,7 +542,7 @@ footer p {
         align-items: center;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 700px) {
 .cuadrocontacto {
     margin: 10px auto;
     max-width: 90%;
