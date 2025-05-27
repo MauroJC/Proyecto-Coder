@@ -199,6 +199,12 @@ main::after {
 }
 
 /*Seccion Index Nuestro Trabajo*/
+.flex-trabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
 
 .trabajo1 {
     display: flex;
@@ -206,38 +212,41 @@ main::after {
 }
 
 .trabajo1 p {
-    border: 0px solid black;
     align-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 50%
+    text-align: justify;
+    margin: 0 auto;
+    width: 40%;
+    padding-right: 30px;
 }
 
 .img-nuestrotrabajo1 {
-    border: 1px solid black;
-    height: 400px;
-    width: 48%;
-    margin-left: 20px;
+    border: 2px solid gray;
+    border-radius: 0.375rem;
+    height: auto;
+    width: 43%;
+    margin: 0 auto;
 }
 
 .trabajo2 {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
 
 .trabajo2 p {
-    border: 0px solid black;
     align-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 50%
+    text-align: justify;
+    margin: 0 auto;
+    width: 40%;
+    padding-left: 30px;
 }
 
 .img-nuestrotrabajo2 {
-    border: 1px solid black;
-    height: 400px;
-    width: 48%;
-    margin-right: 20px;
+    border: 2px solid gray;
+    border-radius: 0.375rem;
+    height: auto;
+    width: 43%;
+    margin: 0 auto;
 }
 
 /*GRID DE CONTACTO*/
@@ -506,7 +515,6 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 10px;
-
     }
 
     .grid-contacto div {
