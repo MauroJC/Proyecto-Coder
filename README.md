@@ -29,3 +29,6 @@ Dejo algunas observaciones de lo realizado
   tiene un buen resultado desde lo buscado, pero creo que con herramientas que veremos
   probablemente en las proximas unidades podria mejorarlo notablemente.
 
+- Se ignoraron algunos archivos segun lo solicitado, que no se utilizaban o no eran
+  solicitados en la entrega. Igualmente si desean ver alguno no duden en solicitarlo.
+
