@@ -266,7 +266,6 @@ main::after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .trabajo1 {
@@ -413,6 +412,7 @@ footer {
     width: 100%;
     min-height: 60px;
     background-color: white;
+    margin-top: 30px;
 }
 
 footer p {
