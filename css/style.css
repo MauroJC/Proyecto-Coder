@@ -144,7 +144,8 @@ main::after {
 .indexh1 {
     display: none;
 }
-/*Seccion Index Nuestro Trabajo*/
+
+/*INDEX Nuestro Trabajo*/
 .flex-trabajos {
     display: flex;
     flex-direction: column;
@@ -193,6 +194,7 @@ main::after {
     width: 43%;
     margin: 0 auto;
 }
+
 /*INDEX CONTACTO*/
 
 .cuadrocontacto {
@@ -294,7 +296,6 @@ main::after {
     position: absolute;
     right: 1rem;
     /*recordatorio posición de la flechita */
-
 }
 
 #carouselExampleAutoplaying {
@@ -310,8 +311,8 @@ main::after {
 /*FIN Acordion Sobre Nosotros*/
 
 /*GRID DE CONTACTO*/
+/*Formulario de Contacto*/
 .grid-contacto {
-    /*Formulario de Contacto*/
     text-transform: capitalize;
     font-weight: 500;
     color: white;
@@ -399,10 +400,10 @@ main::after {
 }
 
 .item-boton button:hover {
-background-color: var(--secondary);
-color: rgb(255, 255, 255);
-border: 2px solid rgb(255, 255, 255);
-transition: 0.3s;
+    background-color: var(--secondary);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 /*FIN GRID DE CONTACTO*/
