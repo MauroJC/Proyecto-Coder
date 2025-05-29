@@ -541,7 +541,7 @@ footer p {
 
 /*MQ INDEX*/
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
     .trabajo1,
     .trabajo2 {
@@ -575,7 +575,7 @@ footer p {
     }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .cuadrocontacto {
         margin: 10px auto;
         max-width: 90%;
@@ -586,7 +586,7 @@ footer p {
 
 /*MQ NUESTRO TRABAJO*/
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     .imagenes-trabajo {
         display: flex;
         flex-direction: column;
@@ -609,7 +609,7 @@ footer p {
 
 
 /*MQ CLIENTES*/
-@media(max-width: 1020px) {
+@media screen and (max-width: 1020px) {
     .grid-imgclientes {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -638,7 +638,7 @@ footer p {
     }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
     .grid-imgclientes {
         display: flex;
         flex-direction: column;
@@ -647,7 +647,7 @@ footer p {
 }
 
 /*MQ CONTACTO*/
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .grid-contacto {
         row-gap: 5px;
         display: flex;
@@ -668,7 +668,7 @@ footer p {
 
 /*MQ FOOTER*/
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .footermedia li {
         margin-right: 30px;
         margin-left: 30px;
