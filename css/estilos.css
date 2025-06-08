@@ -166,9 +166,6 @@ body main .imagenes-trabajo .item-trabajo img {
 }
 
 @media screen and (max-width: 700px) {
-  body main .flex-trabajos {
-    border: 3px solid red;
-  }
   body main .flex-trabajos .trabajo1,
   body main .flex-trabajos .trabajo2 {
     display: flex;
