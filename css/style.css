@@ -322,7 +322,7 @@ main::after {
 .grid-contacto div {
     display: flex;
     flex-direction: column;
-    align-self: flex-end
+    align-self: flex-end;
 }
 
 .grid-contacto div input {
