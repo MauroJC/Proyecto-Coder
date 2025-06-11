@@ -39,6 +39,9 @@ body .pagina-nosotros .accordion .accordion-item h2 .accordion-button::after {
   right: 1rem;
   /*recordatorio posición de la flechita */
 }
+body .pagina-nosotros .accordion .accordion-item .accordion-collapse .accordion-body {
+  line-height: 2;
+}
 
 body main .grid-contacto {
   text-transform: capitalize;
