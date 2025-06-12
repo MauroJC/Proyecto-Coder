@@ -103,19 +103,20 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     body {
         main {
             .grid-imgclientes {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                row-gap: 30px;
             }
         }
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
     body {
         main {
             .grid-contacto {
