@@ -117,6 +117,7 @@ body main .item-boton button:hover {
   color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
   transition: 0.3s;
+  transform: scale(1.1);
 }
 
 body main .grid-imgclientes {
@@ -126,8 +127,6 @@ body main .grid-imgclientes {
   text-align: center;
 }
 body main .grid-imgclientes div img {
-  border: 2px solid grey;
-  border-radius: 0.375rem;
   height: 200px;
   width: 200px;
 }
